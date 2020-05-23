@@ -9,7 +9,7 @@ import java.util.Map;
 public class groupAnagrams {
 
 	public static void main(String[] args) {
-      String [] words= {"eat", "tea", "tan", "ate", "nat", "bat"};
+      String [] words= {"eat", "enigma", "miagne", "ate", "nat", "bat","add","dad"};
 		
    solution sol =new solution();
      System.out.println(sol.groupAnagram(words));		
