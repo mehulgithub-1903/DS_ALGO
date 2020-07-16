@@ -7,6 +7,7 @@ public class mainClass {
 
 	public static void main(String[] args) {
 		Set<Integer> x=new HashSet<>();
+		
 		x.add(789);
 		x.add(78979);
 		x.add(459);
@@ -16,6 +17,9 @@ public class mainClass {
 		x.addAll(y);
 		x.retainAll(y);
 	System.out.println(x);
+  
+	Set   <Node<E>> y=new HashSet<>();
+	
 	}
 
 }

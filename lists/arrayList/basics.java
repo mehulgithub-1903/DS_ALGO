@@ -17,6 +17,11 @@ public class basics {
 	      obj.add("Chaitanya");
 	      obj.add("Steve");
 	      obj.add("Anuj");
+	      System.out.println(obj);
+	      obj.add(obj.get(0));
+	      System.out.println(obj);
+	      obj.remove(0);
+	      System.out.println(obj);
 Collections.sort(obj,Collections.reverseOrder());
 	      // Displaying elements
 	      System.out.println("Original ArrayList:");
@@ -51,7 +56,27 @@ Collections.sort(obj,Collections.reverseOrder());
 	      System.out.println("Final ArrayList:");
 	      for(String str:obj)
 	         System.out.println(str);
-
+	      // to convert arraylist in array
+	      ArrayList<String> al=new ArrayList<>();
+	      al.add("apple");
+	      al.add("red");
+	      al.add("dog");
+	      Object clonelist;
+	      clonelist=al.clone();
+	      System.out.println(clonelist);
+String [] arr =new String[al.size()];
+	      al.toArray(arr);
+	      System.out.println(arr[1]);
+//to convert array into arraylist
+	      String [] a=new String[2];
+	      a[0]="hello";
+	      a[1]="hell";
+	      List<String> bl=new ArrayList<String>(Arrays.asList(a));
+	  System.out.println(bl);
+	 
+/*
+ * Note: toString() converts the whole array list into a single String.
+ */
 	}
 
 }

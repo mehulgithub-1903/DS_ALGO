@@ -4,7 +4,7 @@ public class MyLinkedList<E>{
 
 	Node <E>head=null;
 //	Node tail;
-public  void add(E data) {
+	public  void add(E data) /*adds to end of linked list*/{
 		Node<E> newNode = new Node<>(data);
 	 
 		if(head==null) {
@@ -17,7 +17,12 @@ public  void add(E data) {
 	 }
 	 temp.next=newNode;
 	 }	
-	 void getList() {
+	public void addFirst(E data){
+		Node<E> newNode=new Node<>(data);
+		newNode.next=head;
+		head=newNode;
+	}
+	void getList() /* prints the list*/ {
 //prints complete list
 		  Node<E> temp=head;
 		  while(temp!=null) {
@@ -25,7 +30,7 @@ public  void add(E data) {
 			 temp=temp.next;
 		 }
 	 }
-     E get(int n) {
+     E get(int n) /*gives you nth element*/{
     	 int i =0;
     	 Node<E> temp=head;
     	 while(i<n) {
@@ -36,7 +41,7 @@ public  void add(E data) {
      }
      int size() {
     	 Node<E> temp =head;
-    	 int i =1;
+    	 int i=1;
     	 while(temp.next!=null) {
     		 temp=temp.next;
     		 i++;
@@ -117,5 +122,21 @@ public  void add(E data) {
     		}
     		return temp.data;
     	}
+    
+     public void reverse() {
+    	 if(head.next==null){
+             return;
+         }
+         Node <E>curr=head.next;
+          Node <E>temp=head;
+          head.next=null;
+  while(temp!=null){
+          temp=curr.next;
+          curr.next=head;
+          head=curr;
+          curr=temp;
+  }
+  
+     }
 }
 	 

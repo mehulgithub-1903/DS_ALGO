@@ -5,33 +5,20 @@ import java.util.Scanner;
 public class test {
 	public static void main(String [] args) {
 		Scanner sc=new Scanner(System.in);
-		var avg=new int[6];
-		System.out.println(avg);
-//		int  p=26;
-//		int b=98;
-//		float c=
-//		System.out.println(c);
-//		//char=U+02C2;
-//	   double s=IntToBol(p);
-//	System.out.println((int)s);
-//	
-	}
-	public static double IntToBol(int a) {
-		int i =0;
-		double b=0;
-		while(a!=0) {
-			
-			if(a!=1) {
-			b+=(a%2)*(Math.pow(10, i));
-			a/=2;
-			i++;
-			}
-			if(a==1) {
-				b+=Math.pow(10, i);
-				break;
-			}
-			
-		}
-		return b;
+int arr[]=new int[510];
+arr.length;
+arr.
+		int i =100;
+		int j=200;
+		while(++i<--j);
+		System.out.println(i);
+//	for(int i =0;i<s.length();i++) {
+//	switch(s.charAt(i)) {
+//	case 1:System.out.println("one");
+//	break;
+//	case 2:System.out.println("two");
+//	break;
+//	}
+//	}
 		}
 }

@@ -3,7 +3,7 @@ package sorting;
 public class Sorting {
 
 	public static void main(String[] args) {
-	int a[]= {5,6,9,8,7,18   };
+	int a[]= {5,6,9,8,7,18};
 	int len=a.length;
 			for(int i =0;i<len;i++)
 			{
